@@ -21,6 +21,11 @@ export default defineNuxtConfig({
     indexable: true,
     trailingSlash: false // Canonical URL consistency
   },
+  runtimeConfig: {
+    public: {
+      paddleCheckoutUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    }
+  },
   routeRules: {
     '/': { prerender: true }
   },

@@ -21,7 +21,7 @@ const navLinks = [
         <div class="flex flex-col">
           <div class="flex items-center gap-2">
             <span class="font-extrabold text-lg sm:text-xl tracking-tight text-neutral-950 dark:text-white">
-              SpaaS.ai
+              SpaaS
             </span>
             <UBadge
               color="warning"
@@ -73,6 +73,12 @@ const navLinks = [
           variant="solid"
           size="sm"
           class="font-bold text-neutral-950 shadow-md shadow-amber-500/20"
+        />
+
+        <PaddleDonateButton
+          size="sm"
+          variant="subtle"
+          label="Buy Us a Broth ☕"
         />
       </div>
     </div>
