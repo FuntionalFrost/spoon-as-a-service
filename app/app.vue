@@ -17,13 +17,31 @@ useHead({
 })
 
 useSeoMeta({
-  title,
-  description,
+  title: 'Enterprise Broth Disruption',
+  description: 'Disproving Austrian proverbs via API. The zero-code cloud cutlery mesh for DACH startups.',
   ogTitle: title,
   ogDescription: description,
   ogImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200&auto=format&fit=crop&q=80',
   twitterCard: 'summary_large_image'
 })
+
+defineOgImage('SpaaS.takumi', {
+  title: 'Spoon as a Service',
+  description: 'Disproving "Too many spoons in the soup change the flavour" via API v4.2'
+})
+
+// Optional Schema.org structured data for search crawlers
+useSchemaOrg([
+  defineSoftwareApp({
+    name: 'SpaaS',
+    operatingSystem: 'Cloud / Kitchen Native',
+    applicationCategory: 'BusinessApplication',
+    offers: [
+      { price: '0', priceCurrency: 'EUR' },
+      { price: '420', priceCurrency: 'EUR' }
+    ]
+  })
+])
 </script>
 
 <template>
