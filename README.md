@@ -1,64 +1,46 @@
-# Nuxt Starter Template
+# 🥄 SpaaS.ai — Spoon as a Service
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+> **Enterprise Broth Disruption & Liquid Concurrency at Scale.**  
+> _Disproving the ancient Austrian proverb "Zu viele Köche/Löffel verderben den Brei" (Too many spoons in the soup change the flavour) via a distributed cloud cutlery mesh._
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+[![aws Seedfinancing](https://img.shields.io/badge/Gef%C3%B6rdert%20durch-aws%20%26%20FFG-amber?style=flat-square)](https://www.ffg.at)
+[![WKO Status](<https://img.shields.io/badge/WKO%20Gewerbeschein-Pending%20(14%20Weeks)-rose?style=flat-square>)](https://www.wko.at)
+[![Vibe Coding](<https://img.shields.io/badge/Written%20Code-0.00%25%20(Prompt%20Only)-blueviolet?style=flat-square>)]()
+[![Compliance](https://img.shields.io/badge/DIN%20EN%2010204-Cutlery%20Compliant-emerald?style=flat-square)]()
+[![Nuxt](https://img.shields.io/badge/Nuxt-4.x-00DC82?style=flat-square&logo=nuxtdotjs)](https://nuxt.com)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.x-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+---
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
+## ☕ Executive Summary
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+**SpaaS.ai** is a venture-backed, zero-code, prompt-engineered liquid manipulation platform designed specifically for the DACH startup ecosystem. Built entirely during e-scooter commutes through Vienna's 7th District (Neubau) while drinking €18.50 oat flat whites, SpaaS monetises the physical dipping of digital cutlery into virtual soups.
 
-## Quick Start
+Why spend years learning computer science or Git when you can raise €3M pre-seed from Bavarian cardboard magnates on pure confidence and LLM streams?
 
-```bash [Terminal]
-npm create nuxt@latest -- -t ui
-```
+---
 
-## Deploy your own
+## 🍲 Core Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
+- **Interactive Liquid Vector Engine**: Real-time Umami, Salinity, and Bureaucracy calculations driven by spoon concurrency metrics.
+- **Multi-Broth Support**:
+  - 🇦🇹 _Wiener Alt-Wiener Rindssuppe_ (Classic Legacy Broth)
+  - 🇩🇪 _Berlin Mitte Deconstructed Currywurst Reduction_
+  - 🇦🇹 _1070 Neubau Artisanal Frittatensuppe_ (Pre-Seed Funded)
+  - 🇩🇪 _DAX-Listed Mittelstand Kartoffelsuppe_ (On-Premise)
+- **Legacy Telefax API**: Direct fax-to-spoon asynchronous interface tailored for German automotive suppliers and Austrian public authorities (SLA: 3–5 business days).
+- **B2B Grant Burn Rate Telemetry**: Real-time monitoring of EU state subsidies exhausted per stirring event.
+- **Dual Theme Engine**: Seamless support for both Dark mode (hackers & vibe coders) and Light mode (board presentations & notary appointments).
 
-## Setup
+---
 
-Make sure to install the dependencies:
+## 🛠️ Tech Stack
 
-```bash
-pnpm install
-```
+- **Framework**: [Nuxt 4](https://nuxt.com) (SSR/Prerendered via Nitro)
+- **UI Library**: [Nuxt UI v4](https://ui.nuxt.com) (`@nuxt/ui`)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
+- **Icons**: Iconify Lucide & Simple Icons
+- **Language**: TypeScript (`vue-tsc` / strict typing)
+- **Package Manager**: `pnpm`
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+---
