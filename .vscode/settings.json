@@ -1,11 +1,32 @@
 {
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "files.associations": {
     "*.css": "tailwindcss"
   },
   "editor.quickSuggestions": {
     "strings": "on"
   },
+
   "tailwindCSS.classAttributes": ["class", "ui"],
-  "tailwindCSS.classFunctions": ["defineAppConfig"]
+  "tailwindCSS.classFunctions": ["defineAppConfig"],
+
+  // Global fallback (formats JSON, CSS, Markdown, YAML)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // ESLint setup
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Hand over code files to ESLint
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }
