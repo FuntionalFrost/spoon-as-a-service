@@ -44,3 +44,53 @@ Why spend years learning computer science or Git when you can raise €3M pre-se
 - **Package Manager**: `pnpm`
 
 ---
+
+## 🚀 Quickstart
+
+Run the spoon engine locally:
+
+```bash
+# 1. Clone the repository
+git clone
+cd spoon-as-a-service
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Start local development server
+pnpm dev
+```
+
+Visit [`http://localhost:3000`](http://localhost:3000) to start stirring.
+
+---
+
+## 📦 Scripts
+
+| Command          | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| `pnpm dev`       | Starts the Nuxt local development server with HMR.            |
+| `pnpm build`     | Compiles and prerenders the static site for Cloudflare Pages. |
+| `pnpm preview`   | Locally previews the production build output.                 |
+| `pnpm lint`      | Runs ESLint and style checks across the codebase.             |
+| `pnpm typecheck` | Validates TypeScript types across components and composables. |
+
+---
+
+## ⚖️ Legal & Satire Disclaimer
+
+**SpaaS.ai is a satirical parody project created purely for educational and entertainment purposes.**
+
+It is **not** officially affiliated with, operated by, or financially endorsed by:
+
+- _Austria Wirtschaftsservice Gesellschaft mbH (aws)_
+- _Österreichische Forschungsförderungsgesellschaft (FFG)_
+- _Wirtschaftskammer Österreich (WKO)_
+
+No actual commercial soup or digital cutlery warranties are provided. All proverbs disproved at your own risk.
+
+---
+
+## 📄 License
+
+Distributed under the [MIT License](https://www.google.com/search?q=./LICENSE).

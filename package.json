@@ -1,6 +1,14 @@
 {
   "name": "spoon-as-a-service",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuntionalFrost/spoon-as-a-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FuntionalFrost/spoon-as-a-service/issues"
+  },
   "type": "module",
   "scripts": {
     "build": "nuxt build",
