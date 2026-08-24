@@ -93,4 +93,4 @@ No actual commercial soup or digital cutlery warranties are provided. All prover
 
 ## 📄 License
 
-Distributed under the [MIT License](https://www.google.com/search?q=./LICENSE).
+Distributed under the [MIT License](./LICENSE).
