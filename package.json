@@ -1,6 +1,6 @@
 {
   "name": "spoon-as-a-service",
-  "private": false,
+  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",

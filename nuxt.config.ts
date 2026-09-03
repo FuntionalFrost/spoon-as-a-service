@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     url: 'https://spoon-as-a-service.pages.dev',
     name: 'Spoon as a Service',
     description: 'Enterprise Broth Disruption & Liquid Concurrency via Cloud Cutlery.',
-    defaultLocale: 'de-AT',
+    defaultLocale: 'en',
     indexable: true,
     trailingSlash: false // Canonical URL consistency
   },
@@ -27,7 +27,9 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/sitemap.xml': { prerender: true },
+    '/robots.txt': { prerender: true }
   },
 
   devServer: {
@@ -36,6 +38,15 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2026-06-30',
+  nitro: {
+    cloudflare: {
+      nodeCompat: true
+    },
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/sitemap.xml', '/robots.txt']
+    }
+  },
 
   eslint: {
     config: {

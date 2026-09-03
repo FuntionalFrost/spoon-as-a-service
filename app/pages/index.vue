@@ -23,6 +23,44 @@ const features = [
     desc: 'Every spoon dip is logged according to §14 UGB. We store zero soup cookies without explicit written consent notarised in Graz.'
   }
 ]
+
+const toast = useToast()
+
+function handleForbesClick() {
+  toast.add({
+    title: 'Forbes "30 Under 30" (Gastronomy Tech)',
+    description: 'Pitch deck rejected: Judges determined digital spoons cannot physically alter Austrian soup.',
+    icon: 'i-lucide-newspaper',
+    color: 'warning'
+  })
+}
+
+function handlePraktikant() {
+  toast.add({
+    title: 'Praktikant Onboarding Initiated',
+    description: 'Your mandatory 6-month unpaid WKO internship application has been routed via Vienna postal mail.',
+    icon: 'i-lucide-check-circle',
+    color: 'neutral'
+  })
+}
+
+function handleFounder() {
+  toast.add({
+    title: 'aws Grant Co-Financing Locked',
+    description: 'Federal tax credits deducted. €420 redirected to 1070 Neubau oat flat white accounts.',
+    icon: 'i-lucide-sparkles',
+    color: 'warning'
+  })
+}
+
+function handleEnterprise() {
+  toast.add({
+    title: 'Telefax Transmission Queued',
+    description: 'DIN-compliant purchase order printed. Dedicated Munich notary SLA: 3 to 5 business days.',
+    icon: 'i-lucide-printer',
+    color: 'info'
+  })
+}
 </script>
 
 <template>
@@ -64,6 +102,7 @@ const features = [
             label="Read Forbes '30 Under 30' Submission"
             icon="i-lucide-newspaper"
             class="w-full sm:w-auto text-neutral-800 dark:text-neutral-200"
+            @click="handleForbesClick"
           />
         </div>
 
@@ -177,6 +216,7 @@ const features = [
               variant="outline"
               label="Get Started"
               class="mt-8 border-neutral-300 dark:border-neutral-700"
+              @click="handlePraktikant"
             />
           </div>
 
@@ -206,6 +246,7 @@ const features = [
               color="warning"
               label="Claim aws Grant & Subscribe"
               class="mt-8 font-bold text-neutral-950"
+              @click="handleFounder"
             />
           </div>
 
@@ -233,6 +274,7 @@ const features = [
               variant="outline"
               label="Request Telefax Form"
               class="mt-8 border-neutral-300 dark:border-neutral-700"
+              @click="handleEnterprise"
             />
           </div>
         </div>
