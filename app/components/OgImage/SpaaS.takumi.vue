@@ -9,7 +9,7 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <div class="w-full h-full bg-neutral-950 text-white flex flex-col justify-between p-16 border-8 border-amber-500 font-['Inter']">
+  <div class="w-full h-full bg-neutral-950 text-white flex flex-col justify-between p-16 border-8 border-amber-500 font-sans">
     <!-- Top Row -->
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-4">
@@ -20,13 +20,13 @@ withDefaults(defineProps<{
           <div class="text-3xl font-bold tracking-tight text-white">
             SpaaS
           </div>
-          <div class="text-sm font-['JetBrains_Mono'] text-amber-400 uppercase tracking-widest">
+          <div class="text-sm font-mono text-amber-400 uppercase tracking-widest">
             SPOON-AS-A-SERVICE
           </div>
         </div>
       </div>
 
-      <div class="text-sm font-['JetBrains_Mono'] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 px-4 py-1.5 rounded-full">
+      <div class="text-sm font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 px-4 py-1.5 rounded-full">
         🇦🇹 aws & FFG Co-Financed
       </div>
     </div>
@@ -42,7 +42,7 @@ withDefaults(defineProps<{
     </div>
 
     <!-- Bottom Metrics Strip -->
-    <div class="flex items-center justify-between border-t border-neutral-800 pt-6 font-['JetBrains_Mono'] text-sm text-neutral-400">
+    <div class="flex items-center justify-between border-t border-neutral-800 pt-6 font-mono text-sm text-neutral-400">
       <div class="flex items-center gap-6">
         <span>● 0.00% Manual Code</span>
         <span>● ISO-9001 Cutlery Spec</span>

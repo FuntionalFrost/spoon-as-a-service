@@ -10,6 +10,12 @@ const {
   triggerSpoonSync,
   soupOptions
 } = useSoupEngine()
+
+const selectedSoupLabel = computed(() => {
+  const match = soupOptions.find(s => s.value === soupType.value)
+  if (!match) return soupType.value
+  return match.label.split('(')[0]?.trim() || match.label
+})
 </script>
 
 <template>
@@ -17,9 +23,14 @@ const {
     <!-- Controls (Left 5 Cols) -->
     <div class="lg:col-span-5 space-y-6 bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-xl transition-colors">
       <div>
-        <label class="block text-xs font-mono text-neutral-600 dark:text-neutral-400 uppercase tracking-wider mb-2">Select Target Broth</label>
+        <label
+          for="broth-select"
+          class="block text-xs font-mono text-neutral-600 dark:text-neutral-400 uppercase tracking-wider mb-2"
+        >Select Target Broth</label>
         <select
+          id="broth-select"
           v-model="soupType"
+          aria-label="Select Target Broth"
           class="w-full bg-neutral-50 dark:bg-neutral-950 border border-neutral-300 dark:border-neutral-700 rounded-lg p-2.5 text-sm text-neutral-900 dark:text-neutral-200 focus:outline-none focus:border-amber-500"
         >
           <option
@@ -34,11 +45,16 @@ const {
 
       <div>
         <div class="flex justify-between text-xs font-mono mb-2">
-          <span class="text-neutral-600 dark:text-neutral-400">Concurrent Spoons in Pot</span>
+          <label
+            for="spoon-count-slider"
+            class="text-neutral-600 dark:text-neutral-400"
+          >Concurrent Spoons in Pot</label>
           <span class="text-amber-600 dark:text-amber-400 font-bold">{{ spoonCount }} spoons</span>
         </div>
         <input
+          id="spoon-count-slider"
           v-model.number="spoonCount"
+          aria-label="Concurrent Spoons in Pot"
           type="range"
           min="1"
           max="10"
@@ -54,11 +70,16 @@ const {
 
       <div>
         <div class="flex justify-between text-xs font-mono mb-2">
-          <span class="text-neutral-600 dark:text-neutral-400">Vibe Coding Intensity</span>
+          <label
+            for="vibe-intensity-slider"
+            class="text-neutral-600 dark:text-neutral-400"
+          >Vibe Coding Intensity</label>
           <span class="text-orange-600 dark:text-orange-400 font-bold">{{ vibeCodingIntensity }}% blind trust</span>
         </div>
         <input
+          id="vibe-intensity-slider"
           v-model.number="vibeCodingIntensity"
+          aria-label="Vibe Coding Intensity"
           type="range"
           min="0"
           max="100"
@@ -111,8 +132,8 @@ const {
                 class="text-4xl block transition-all"
                 :class="{ 'animate-bounce': isStirring }"
               >🍲</span>
-              <span class="text-[11px] font-mono font-bold tracking-wider text-amber-200 uppercase bg-black/50 px-2 py-0.5 rounded mt-1 inline-block">
-                {{ soupType }}
+              <span class="text-[11px] font-mono font-bold tracking-wider text-amber-200 uppercase bg-black/50 px-2 py-0.5 rounded mt-1 inline-block max-w-[180px] truncate">
+                {{ selectedSoupLabel }}
               </span>
             </div>
           </div>

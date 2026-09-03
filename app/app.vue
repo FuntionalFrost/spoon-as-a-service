@@ -14,7 +14,7 @@ useHead({
       href: '/favicon.svg'
     }
   ],
-  htmlAttrs: { lang: 'de-AT' }
+  htmlAttrs: { lang: 'en' }
 })
 
 useSeoMeta({
@@ -22,7 +22,6 @@ useSeoMeta({
   description: 'Disproving Austrian proverbs via API. The zero-code cloud cutlery mesh for DACH startups.',
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200&auto=format&fit=crop&q=80',
   twitterCard: 'summary_large_image'
 })
 
