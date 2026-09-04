@@ -57,7 +57,18 @@ export default defineNuxtConfig({
     }
   },
 
+  fonts: {
+    families: [
+      { name: 'Inter', provider: 'google' },
+      { name: 'JetBrains Mono', provider: 'google' }
+    ]
+  },
+
   ogImage: {
+    zeroRuntime: true
+  },
+
+  sitemap: {
     zeroRuntime: true
   }
 })

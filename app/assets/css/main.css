@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
@@ -8,3 +13,4 @@
     @apply bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-200;
   }
 }
+
