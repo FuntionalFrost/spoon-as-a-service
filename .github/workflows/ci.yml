@@ -1,37 +1,37 @@
-name: ci
+name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   pull_request:
-    branches: [main, master]
+    branches: [main]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: read
-
 jobs:
-  ci:
+  build-and-check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Setup pnpm and Node 26
+      - name: Setup pnpm and Node.js
         uses: pnpm/setup@v2
         with:
+          version: 11
           runtime: node@26
           cache: true
+          require-lockfile: true
 
-      - name: Lint
-        run: pnpm run lint
+      - name: Lint and format check
+        run: pnpm lint
 
-      - name: Typecheck
-        run: pnpm run typecheck
+      - name: Run Nuxt typecheck
+        run: pnpm typecheck
 
-      - name: Build
-        run: pnpm run build
+      - name: Generate static site
+        run: pnpm generate
+
