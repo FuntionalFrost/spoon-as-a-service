@@ -16,6 +16,7 @@
     "preview": "nuxt preview -o",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "generate": "nuxt generate",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
