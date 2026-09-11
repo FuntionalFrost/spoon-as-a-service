@@ -43,6 +43,7 @@ export default defineNuxtConfig({
       nodeCompat: true
     },
     prerender: {
+      autoSubfolderIndex: false,
       crawlLinks: true,
       routes: ['/', '/sitemap.xml', '/robots.txt']
     }
